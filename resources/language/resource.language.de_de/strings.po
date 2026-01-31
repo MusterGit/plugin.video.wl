@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2014-10-26 17:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+
+msgctxt "#30001"
+msgid "Behavior"
+msgstr "Verhalten"
+
+msgctxt "#30002"
+msgid "List entries sorting"
+msgstr "Sortierung der Listeneinträge"
+
+msgctxt "#30003"
+msgid "Manually"
+msgstr "manuell"
+
+msgctxt "#30004"
+msgid "Last used"
+msgstr "letzter Zugriff"
+
+msgctxt "#30005"
+msgid "Select list"
+msgstr "Liste wählen ..."
+
+msgctxt "#30006"
+msgid "Alternative dialog"
+msgstr "alternativer Dialog"
+
+msgctxt "#30007"
+msgid "Alternative watchlist file"
+msgstr "Alternative für watchlist"
+
+msgctxt "#30008"
+msgid "Select list for watchlist"
+msgstr "wähle Liste für Watchlist"
+
+msgctxt "#30009"
+msgid "Selected list"
+msgstr "gewählte Liste"
+
+msgctxt "#30010"
+msgid "Add dialog"
+msgstr "Hinzufügen Dialog"
+
+msgctxt "#30011"
+msgid "Watchlist"
+msgstr "Watchlist"
+
+msgctxt "#30012"
+msgid "Lists"
+msgstr "Listen"
+
+msgctxt "#30013"
+msgid "Permanently delete"
+msgstr "Dauerhaft löschen"
+
+msgctxt "#30014"
+msgid "Restore lists"
+msgstr "Listen wiederherstellen"
+
+# default.py
+msgctxt "#30200"
+msgid "added"
+msgstr "hinzugefügt"
+
+msgctxt "#30201"
+msgid "No elements to play"
+msgstr "Keine Elemente zum abspielen"
+
+msgctxt "#30202"
+msgid "New list"
+msgstr "Neue Liste"
+
+msgctxt "#30203"
+msgid "Add to"
+msgstr "hinzufügen zu"
+
+msgctxt "#30204"
+msgid "Select List"
+msgstr "Liste wählen"
+
+msgctxt "#30205"
+msgid "Name of new list"
+msgstr "Name der neuen Liste"
+
+msgctxt "#30206"
+msgid "Error adding"
+msgstr "Fehler beim Hinzufügen"
+
+msgctxt "#30207"
+msgid "already included"
+msgstr "bereits vorhanden"
+
+msgctxt "#30208"
+msgid "Remove list"
+msgstr "Liste entfernen"
+
+msgctxt "#30209"
+msgid "Play all"
+msgstr "Alle abspielen"
+
+msgctxt "#30210"
+msgid "empty list"
+msgstr "Die Liste ist leer"
+
+msgctxt "#30211"
+msgid "Remove from"
+msgstr "Löschen aus"
+
+msgctxt "#30212"
+msgid "Removed"
+msgstr "Entfernt"
+
+msgctxt "#30213"
+msgid "Error removing"
+msgstr "Fehler beim Entfernen"
+
+msgctxt "#30214"
+msgid "Removed entry"
+msgstr "Eintrag gelöscht"
+
+#utils.py
+msgctxt "#30215"
+msgid "Lists to restore"
+msgstr "Listen zum Wiederherstellen"
+
+msgctxt "#30216"
+msgid "all lists"
+msgstr "Alle Listen"
+
+msgctxt "#30217"
+msgid "All lists restored"
+msgstr "Alle Listen wiederhergestellt"
+
+msgctxt "#30218"
+msgid "restored"
+msgstr "wiederhergestellt"
+
+msgctxt "#30219"
+msgid "no recoverable lists"
+msgstr "keine wiederherstellbaren Listen"
+
+
