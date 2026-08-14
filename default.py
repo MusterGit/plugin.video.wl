@@ -243,7 +243,12 @@ def show_watchlist(list):
         #li.addContextMenuItems([(f"[COLOR goldenrod]{LANGID(30211)} {list}[/COLOR]", remove_cmd),(f"[COLOR goldenrod]Bild ändern[/COLOR]", img_cmd),(f"[COLOR goldenrod]EDIT[/COLOR]", edit_cmd)]) # xxx trans
         li.addContextMenuItems([(f"[COLOR goldenrod]{LANGID(30211)} {list}[/COLOR]", remove_cmd),(f"[COLOR goldenrod]EDIT[/COLOR]", edit_cmd)]) # xxx trans
         
-        url = f"plugin://{ADDON_ID}/?action=play_switch&json={list}&file={encoded_path}"
+        
+        if list.lower().endswith("_static"):
+            is_folder = True
+            url = item['path']
+        else:
+            url = f"plugin://{ADDON_ID}/?action=play_switch&json={list}&file={encoded_path}"
         
         #url = f'plugin://script.openpath/?path={encoded_path}'
         #url = f'RunPlugin(plugin://script.openpath/?path={encoded_path})'
@@ -406,8 +411,9 @@ def play_switch(file_path,list):
             name = item['title']
             plot = item['plot']
             fileorfolder = item['fileorfolder']
-            #path = item['path']
+            opath = item['path']
             break
+        
     save_watchlist(watchlist,list)
     aw = ("plugin://","videodb://")
     if fileorfolder == 'folder':
@@ -415,14 +421,17 @@ def play_switch(file_path,list):
             match = re.match(r'addons:\/\/user\/(.*)', file_path)
             addon_id = match.group(1)
             full = 'RunAddon(%s)' % addon_id
-        #elif file_path.startswith('plugin://'): 
         elif any(file_path.startswith(sw) for sw in aw):
             epath = quote(file_path, safe=':/?&=%')
             full = f'ActivateWindow(10025,"{epath}",return)'
             #full = f'ActivateWindow(Videos,"{epath}",return)'
+        else:
+            file_path = file_path.replace("\\", "/")
+            full = f'ActivateWindow(10025,"{file_path}",return)'
             
         # DEBUG
-        #xbmcgui.Dialog().ok('debug',full)
+        #d.ok('img',str(opath))
+        #d.ok('img',str(full))
         
         xbmcplugin.endOfDirectory(HANDLE,succeeded = True)
         if xbmc.getCondVisibility('Window.IsActive(10000)'):
